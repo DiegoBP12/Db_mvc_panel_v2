@@ -41,7 +41,12 @@ public class ViewMain extends javax.swing.JFrame {
         jmi_agenda.setText("Agenda");
         jMenu1.add(jmi_agenda);
 
-        jmi_detalle_contacto.setText("Detalle Cotacto");
+        jmi_detalle_contacto.setText("Detalle Contacto");
+        jmi_detalle_contacto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmi_detalle_contactoActionPerformed(evt);
+            }
+        });
         jMenu1.add(jmi_detalle_contacto);
         jMenu1.add(jSeparator1);
 
@@ -56,15 +61,19 @@ public class ViewMain extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 659, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 269, Short.MAX_VALUE)
+            .addGap(0, 290, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jmi_detalle_contactoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_detalle_contactoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jmi_detalle_contactoActionPerformed
 
     /**
      * @param args the command line arguments
