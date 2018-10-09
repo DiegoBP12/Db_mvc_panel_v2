@@ -30,6 +30,7 @@ public class ViewDetalleContacto extends javax.swing.JPanel {
         jl_nombre = new javax.swing.JLabel();
         jl_email = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jl_telefono = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 102, 102));
 
@@ -46,6 +47,10 @@ public class ViewDetalleContacto extends javax.swing.JPanel {
         jLabel1.setText("Detalles");
         jLabel1.setToolTipText("");
 
+        jl_telefono.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jl_telefono.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jl_telefono.setText("telefono");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -56,6 +61,7 @@ public class ViewDetalleContacto extends javax.swing.JPanel {
                 .addContainerGap())
             .addComponent(jl_email, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 518, Short.MAX_VALUE)
             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jl_telefono, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 518, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -64,9 +70,11 @@ public class ViewDetalleContacto extends javax.swing.JPanel {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(jl_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(26, 26, 26)
                 .addComponent(jl_email, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addGap(33, 33, 33)
+                .addComponent(jl_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(35, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -75,5 +83,6 @@ public class ViewDetalleContacto extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jl_email;
     public javax.swing.JLabel jl_nombre;
+    public javax.swing.JLabel jl_telefono;
     // End of variables declaration//GEN-END:variables
 }
