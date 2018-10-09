@@ -92,7 +92,7 @@ public class ControllerMain {
     };
 
     /**
-     * 1.- Obtiene los valores de nombre y email del modelAgenda
+     * 1.- Obtiene los valores de nombre,email y telefono del modelAgenda
      * y posteriormente los asigna a las variables nombre y email del
      * modelDetalleContacto,
      * 

@@ -28,7 +28,7 @@ public class ControllerDetalleContacto {
     }
     
     /**
-     * Muestra el nombre e email almacenados en el modelDetalleContacto en el 
+     * Muestra el nombre, email y telefono almacenados en el modelDetalleContacto en el 
      * viewDetalleContacto.
      */
     public final void initView(){
