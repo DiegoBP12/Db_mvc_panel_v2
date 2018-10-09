@@ -72,7 +72,7 @@ public class ModelAgenda {
 
     /**
      * Lee los valores del registro seleccionado y los asigna a las variables
-     * miembre nombre y email.
+     * miembre nombre, email y telefono.
      */
     public void setValues() {
         try {
@@ -91,7 +91,13 @@ public class ModelAgenda {
      * 3.- obtener el valor del email de rs y guardarlo en la variable email
      */
     public void moverPrimerRegistro() {
-        System.out.println("moverPrimerRegistro");
+        try{
+            rs.first();
+            setValues();
+        }catch(Exception err){
+            JOptionPane.showMessageDialog(null,"Error ModelAgenda Fail001  "+err.getMessage()); 
+            
+        }
     }
 
     /**
@@ -101,7 +107,12 @@ public class ModelAgenda {
      * email
      */
     public void moverSiguienteRegistro() {
-        System.out.println("moverSiguienteRegistro");
+        try{
+            rs.next();
+            setValues();
+        }catch(Exception err){
+            JOptionPane.showMessageDialog(null,"Error ModelAgenda UltimoRegistro:  "+err.getMessage()); 
+        }
     }
 
     /**
@@ -111,7 +122,12 @@ public class ModelAgenda {
      * email
      */
     public void moverAnteriorRegistro() {
-        System.out.println("moverAnteriorRegistro");
+        try{
+            rs.previous();
+            setValues();
+        }catch(Exception err){
+            JOptionPane.showMessageDialog(null,"Error ModelAgenda PrimerRegistro:  "+err.getMessage()); 
+        }
     }
 
     /**
@@ -120,7 +136,12 @@ public class ModelAgenda {
      * 3.- obtener el valor del email de rs y guardarlo en la variable email
      */
     public void moverUltimoRegistro() {
-        System.out.println("moverUltimoRegistro");
+        try{
+            rs.last();
+            setValues();
+        }catch(Exception err){
+            JOptionPane.showMessageDialog(null,"Error ModelAgenda Fail002  "+err.getMessage()); 
+        }
     }
 
     
