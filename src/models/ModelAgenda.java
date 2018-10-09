@@ -78,6 +78,7 @@ public class ModelAgenda {
         try {
             nombre = rs.getString("nombre");
             email = rs.getString("email");
+            telefono = rs.getString("telefono");
         } catch (SQLException err) {
             JOptionPane.showMessageDialog(null, "Error model 102: " + err.getMessage());
 

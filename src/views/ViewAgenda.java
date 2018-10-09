@@ -36,6 +36,8 @@ public class ViewAgenda extends javax.swing.JPanel {
         jbtn_siguiente = new javax.swing.JButton();
         jbtn_ultimo = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jtf_telefono = new javax.swing.JTextField();
+        jl_telefono = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 102, 102));
 
@@ -56,6 +58,9 @@ public class ViewAgenda extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel1.setText("Registros");
 
+        jl_telefono.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jl_telefono.setText("Teléfono:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -63,39 +68,40 @@ public class ViewAgenda extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(97, 97, 97)
-                                .addComponent(jl_email))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(39, 39, 39)
-                                .addComponent(jbtn_primero, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(34, 34, 34))
+                        .addGap(97, 97, 97)
+                        .addComponent(jl_email))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jbtn_primero, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jl_nombre)
-                        .addGap(18, 18, 18)))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jl_nombre, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jl_telefono, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jbtn_anterior, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jbtn_siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(64, 64, 64)
+                        .addGap(68, 68, 68)
                         .addComponent(jbtn_ultimo, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31))
+                        .addGap(62, 62, 62))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jtf_email, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
-                            .addComponent(jtf_nombre))
+                            .addComponent(jtf_nombre)
+                            .addComponent(jtf_telefono, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(221, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(224, 224, 224))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -103,15 +109,20 @@ public class ViewAgenda extends javax.swing.JPanel {
                     .addComponent(jl_nombre))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_email))
-                .addGap(34, 34, 34)
+                    .addComponent(jl_email)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jtf_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_telefono))))
+                .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbtn_primero, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jbtn_anterior, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jbtn_siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jbtn_ultimo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(88, 88, 88))
+                .addGap(72, 72, 72))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -124,7 +135,9 @@ public class ViewAgenda extends javax.swing.JPanel {
     public javax.swing.JButton jbtn_ultimo;
     public javax.swing.JLabel jl_email;
     public javax.swing.JLabel jl_nombre;
+    public javax.swing.JLabel jl_telefono;
     public javax.swing.JTextField jtf_email;
     public javax.swing.JTextField jtf_nombre;
+    public javax.swing.JTextField jtf_telefono;
     // End of variables declaration//GEN-END:variables
 }
