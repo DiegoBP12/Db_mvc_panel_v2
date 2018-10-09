@@ -29,12 +29,20 @@ public class ViewDetalleContacto extends javax.swing.JPanel {
 
         jl_nombre = new javax.swing.JLabel();
         jl_email = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(0, 102, 102));
+
+        jl_nombre.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
         jl_nombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jl_nombre.setText("nombre");
 
+        jl_email.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
         jl_email.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jl_email.setText("email");
+
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel1.setText("Detalles");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -45,20 +53,27 @@ public class ViewDetalleContacto extends javax.swing.JPanel {
                 .addComponent(jl_nombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addComponent(jl_email, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(164, 164, 164)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(59, 59, 59)
                 .addComponent(jl_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jl_email, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jl_email;
     public javax.swing.JLabel jl_nombre;
     // End of variables declaration//GEN-END:variables
