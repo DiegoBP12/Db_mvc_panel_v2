@@ -55,6 +55,10 @@ public class ViewAgenda extends javax.swing.JPanel {
         jl_email.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jl_email.setText("Email:");
 
+        jtf_nombre.setEditable(false);
+
+        jtf_email.setEditable(false);
+
         jbtn_primero.setText("|<");
 
         jbtn_anterior.setText("<<");
@@ -65,6 +69,8 @@ public class ViewAgenda extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel1.setText("Registros");
+
+        jtf_telefono.setEditable(false);
 
         jl_telefono.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jl_telefono.setText("Teléfono:");
