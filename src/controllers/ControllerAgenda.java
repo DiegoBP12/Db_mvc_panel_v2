@@ -169,4 +169,11 @@ public class ControllerAgenda {
         setValues();
     }
     
+    /**
+     * Método que habilita los JTextField nombre y email para ser editables.
+     */
+    private void jbtn_modificar_actionPerformed(){
+        editable();
+    }
+    
 }
