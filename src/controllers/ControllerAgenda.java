@@ -139,4 +139,13 @@ public class ControllerAgenda {
         viewAgenda.jtf_nombre.setEditable(false);
         viewAgenda.jtf_email.setEditable(false);
     }
+    
+    /**
+     * Método que limpia los JTextField nombre y email, manda a llamar al método editable.
+     */
+    private void jbtn_nuevo_actionPerformed(){
+        viewAgenda.jtf_nombre.setText("");
+        viewAgenda.jtf_email.setText("");
+        editable();
+    }
 }
