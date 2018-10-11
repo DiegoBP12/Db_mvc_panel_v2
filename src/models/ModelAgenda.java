@@ -164,4 +164,23 @@ public class ModelAgenda {
         }
     }
     
+    /**
+     * Método que realiza lo siguiente:
+     * 1.- Actualiza la información con el query.
+     * 2.- Manda un mensaje de que se actualizo correctamente
+     * 3.- Actualiza los datos mandando al primer registro.
+     */
+    public void guardarRegistro(){
+        try{
+            String sql = "UPDATE contactos SET nombre ='" + nombre + "', email = '" + email + "', telefono = '" + telefono + "' where id_contacto = '" + id + "';";
+            st.executeUpdate(sql);
+            JOptionPane.showMessageDialog(null, "Se ha actualizado correctamente");
+            rs = st.executeQuery("SELECT * FROM contactos;");
+            moverPrimerRegistro();
+        }catch(SQLException err){
+            
+            JOptionPane.showMessageDialog(null, "Error ModelAgenda Actualizacion: " + err.getMessage());
+        }
+    }
+    
 }
