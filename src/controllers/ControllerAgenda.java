@@ -178,6 +178,7 @@ public class ControllerAgenda {
         viewAgenda.jtf_telefono.setText("");
         editable();
         viewAgenda.jbtn_insertar.setEnabled(true);
+        viewAgenda.jbtn_guardar.setEnabled(false);
     }
     
      /**
@@ -197,6 +198,7 @@ public class ControllerAgenda {
     private void jbtn_modificar_actionPerformed(){
         editable();
         viewAgenda.jbtn_guardar.setEnabled(true);
+        viewAgenda.jbtn_insertar.setEnabled(false);
     }
     
     /**
