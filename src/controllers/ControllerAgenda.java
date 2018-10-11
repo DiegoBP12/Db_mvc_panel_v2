@@ -123,4 +123,20 @@ public class ControllerAgenda {
         viewAgenda.jtf_email.setText(modelAgenda.getEmail());
         viewAgenda.jtf_telefono.setText(modelAgenda.getTelefono());
     }
+    
+    /**
+     * Método que modifica la propiedad editable a True de los JTextField nombre y email.
+     */
+    private void editable(){
+        viewAgenda.jtf_nombre.setEditable(true);
+        viewAgenda.jtf_email.setEditable(true);
+    }
+    
+    /**
+     * Método que modifica la propiedad editable a False de los JTextField nombre y email.
+     */
+    private void editableF(){
+        viewAgenda.jtf_nombre.setEditable(false);
+        viewAgenda.jtf_email.setEditable(false);
+    }
 }
