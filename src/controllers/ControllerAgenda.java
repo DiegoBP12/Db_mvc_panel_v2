@@ -125,6 +125,15 @@ public class ControllerAgenda {
     }
     
     /**
+     * Método que obtiene los valores de los JTextField nombre y email y los manda al modelo.
+     */
+    private void obtener_Datos(){
+        modelAgenda.setNombre(viewAgenda.jtf_nombre.getText());
+        modelAgenda.setEmail(viewAgenda.jtf_email.getText());
+        modelAgenda.setTelefono(viewAgenda.jtf_telefono.getText());
+    }
+    
+    /**
      * Método que modifica la propiedad editable a True de los JTextField nombre y email.
      */
     private void editable(){
@@ -148,4 +157,6 @@ public class ControllerAgenda {
         viewAgenda.jtf_email.setText("");
         editable();
     }
+    
+    
 }
