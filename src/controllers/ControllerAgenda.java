@@ -226,6 +226,7 @@ public class ControllerAgenda {
         viewAgenda.jbtn_insertar.setEnabled(false);
         modelAgenda.moverPrimerRegistro();
         setValues();
+        editableF();
         
     }
 }
