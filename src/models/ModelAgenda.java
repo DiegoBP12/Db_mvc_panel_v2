@@ -25,6 +25,7 @@ public class ModelAgenda {
     private String nombre;
     private String email;
     private String telefono;
+    private int id;
 
     public String getNombre() {
         return nombre;
@@ -143,6 +144,24 @@ public class ModelAgenda {
             JOptionPane.showMessageDialog(null,"Error ModelAgenda Fail002  "+err.getMessage()); 
         }
     }
-
+   
+     /**
+     * Método que realiza lo siguiente:
+     * 1.- Inserta en la tabla un nuevo registro con los valores de las variables nombre y email.
+     * 2.- Ejecuta una consulta de datos.
+     * 3.- Manda el valor del primer registro obtenido de la consulta.
+     */
+    public void insertarRegistro(){
+        try{
+            String sql = "INSERT INTO contactos(nombre,email,telefono)" + "VALUES ('"+ nombre +"','"+ email +"','"+telefono+"');";
+            st.executeUpdate(sql);
+            JOptionPane.showMessageDialog(null, "Se ha insertado correctamente");
+            rs = st.executeQuery("SELECT * FROM contactos;");
+            moverPrimerRegistro();
+        }catch(SQLException err){
+            
+            JOptionPane.showMessageDialog(null, "Error ModelAgenda Inserción: " + err.getMessage());
+        }
+    }
     
 }
