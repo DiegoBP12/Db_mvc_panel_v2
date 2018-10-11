@@ -176,4 +176,13 @@ public class ControllerAgenda {
         editable();
     }
     
+    /**
+     * Método que manda los valores de los JTextField nombre y email, manda a llamar al método actualizarRegistro del modelo. 
+     */
+    private void jbtn_guardar_actionPerformed(){
+        obtener_Datos();
+        modelAgenda.guardarRegistro();
+        editableF();
+        setValues();
+    }
 }
