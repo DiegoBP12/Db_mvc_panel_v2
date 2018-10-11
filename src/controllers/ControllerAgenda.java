@@ -44,6 +44,8 @@ public class ControllerAgenda {
                 jbtn_guardar_actionPerformed();
             } else if (e.getSource() == viewAgenda.jbtn_eliminar){
                 jbtn_eliminar_actionPerformed();
+            } else if (e.getSource() == viewAgenda.jbtn_cancelar){
+                jbtn_cancelar_actionPerformed();
             }
 
         }
@@ -96,13 +98,14 @@ public class ControllerAgenda {
         viewAgenda.jbtn_modificar.addActionListener(actionListener);
         viewAgenda.jbtn_guardar.addActionListener(actionListener);
         viewAgenda.jbtn_eliminar.addActionListener(actionListener);
+        viewAgenda.jbtn_cancelar.addActionListener(actionListener);
     }
 
     /**
      * Método para ver el primer registro de la tabla contactos
      */
     private void jbtn_primero_actionPerformed() {
-         modelAgenda.moverPrimerRegistro();
+        modelAgenda.moverPrimerRegistro();
         setValues();
     }
 
@@ -218,5 +221,11 @@ public class ControllerAgenda {
     /**
      * Método que vuelve los valores a su forma por default
      */
-    
+    private void jbtn_cancelar_actionPerformed(){
+        viewAgenda.jbtn_guardar.setEnabled(false);
+        viewAgenda.jbtn_insertar.setEnabled(false);
+        modelAgenda.moverPrimerRegistro();
+        setValues();
+        
+    }
 }
