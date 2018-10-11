@@ -154,6 +154,7 @@ public class ControllerAgenda {
     private void editable(){
         viewAgenda.jtf_nombre.setEditable(true);
         viewAgenda.jtf_email.setEditable(true);
+        viewAgenda.jtf_telefono.setEditable(true);
     }
     
     /**
@@ -162,6 +163,7 @@ public class ControllerAgenda {
     private void editableF(){
         viewAgenda.jtf_nombre.setEditable(false);
         viewAgenda.jtf_email.setEditable(false);
+        viewAgenda.jtf_telefono.setEditable(false);
     }
     
     /**
@@ -170,6 +172,7 @@ public class ControllerAgenda {
     private void jbtn_nuevo_actionPerformed(){
         viewAgenda.jtf_nombre.setText("");
         viewAgenda.jtf_email.setText("");
+        viewAgenda.jtf_telefono.setText("");
         editable();
     }
     
