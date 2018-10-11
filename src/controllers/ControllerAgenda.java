@@ -185,4 +185,13 @@ public class ControllerAgenda {
         editableF();
         setValues();
     }
+    
+    /**
+     * Método que manda los valores de los JTextField nombre y email, manda a llamar al método eliminarRegistro del modelo. 
+     */
+    private void jbtn_eliminar_actionPerformed(){
+        obtener_Datos();
+        modelAgenda.eliminarRegistro();
+        setValues();
+    }
 }
