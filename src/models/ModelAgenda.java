@@ -153,7 +153,7 @@ public class ModelAgenda {
      */
     public void insertarRegistro(){
         try{
-            String sql = "INSERT INTO contactos(nombre,email,telefono)" + "VALUES ('"+ nombre +"','"+ email +"','"+telefono+"');";
+            String sql = "INSERT INTO contactos(nombre,email,telefono)" + "VALUES ('"+ nombre +"','"+ email +"','"+ telefono +"');";
             st.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Se ha insertado correctamente");
             rs = st.executeQuery("SELECT * FROM contactos;");

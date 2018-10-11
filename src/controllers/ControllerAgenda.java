@@ -174,6 +174,7 @@ public class ControllerAgenda {
         viewAgenda.jtf_email.setText("");
         viewAgenda.jtf_telefono.setText("");
         editable();
+        viewAgenda.jbtn_insertar.setEnabled(true);
     }
     
      /**
@@ -192,6 +193,7 @@ public class ControllerAgenda {
      */
     private void jbtn_modificar_actionPerformed(){
         editable();
+        viewAgenda.jbtn_guardar.setEnabled(true);
     }
     
     /**
@@ -212,4 +214,9 @@ public class ControllerAgenda {
         modelAgenda.eliminarRegistro();
         setValues();
     }
+    
+    /**
+     * Método que vuelve los valores a su forma por default
+     */
+    
 }
