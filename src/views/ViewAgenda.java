@@ -44,6 +44,7 @@ public class ViewAgenda extends javax.swing.JPanel {
         jbtn_insertar = new javax.swing.JButton();
         jbtn_guardar = new javax.swing.JButton();
         jbtn_eliminar = new javax.swing.JButton();
+        jbtn_cancelar = new javax.swing.JButton();
 
         jButton3.setText("jButton1");
 
@@ -107,6 +108,13 @@ public class ViewAgenda extends javax.swing.JPanel {
             }
         });
 
+        jbtn_cancelar.setText("Cancelar");
+        jbtn_cancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn_cancelarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -123,7 +131,9 @@ public class ViewAgenda extends javax.swing.JPanel {
                         .addGap(28, 28, 28)
                         .addComponent(jbtn_guardar)
                         .addGap(18, 18, 18)
-                        .addComponent(jbtn_eliminar))
+                        .addComponent(jbtn_eliminar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_cancelar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,7 +193,8 @@ public class ViewAgenda extends javax.swing.JPanel {
                         .addComponent(jbtn_modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jbtn_guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jbtn_insertar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jbtn_eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jbtn_eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbtn_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(28, 28, 28))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -204,11 +215,16 @@ public class ViewAgenda extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jbtn_eliminarActionPerformed
 
+    private void jbtn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn_cancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn_cancelarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     public javax.swing.JButton jbtn_anterior;
+    public javax.swing.JButton jbtn_cancelar;
     public javax.swing.JButton jbtn_eliminar;
     public javax.swing.JButton jbtn_guardar;
     public javax.swing.JButton jbtn_insertar;
