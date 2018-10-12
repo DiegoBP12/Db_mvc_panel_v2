@@ -190,6 +190,7 @@ public class ControllerAgenda {
         modelAgenda.insertarRegistro();
         editableF();
         setValues();
+        viewAgenda.jbtn_insertar.setEnabled(false);
     }
     
     /**
@@ -209,6 +210,7 @@ public class ControllerAgenda {
         modelAgenda.guardarRegistro();
         editableF();
         setValues();
+        viewAgenda.jbtn_guardar.setEnabled(false);
     }
     
     /**

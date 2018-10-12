@@ -80,6 +80,7 @@ public class ModelAgenda {
             nombre = rs.getString("nombre");
             email = rs.getString("email");
             telefono = rs.getString("telefono");
+            id = rs.getInt("id_contacto");
         } catch (SQLException err) {
             JOptionPane.showMessageDialog(null, "Error model 102: " + err.getMessage());
 
@@ -173,6 +174,7 @@ public class ModelAgenda {
     public void guardarRegistro(){
         try{
             String sql = "UPDATE contactos SET nombre ='" + nombre + "', email = '" + email + "', telefono = '" + telefono + "' where id_contacto = '" + id + "';";
+            System.out.println(sql);
             st.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Se ha actualizado correctamente");
             rs = st.executeQuery("SELECT * FROM contactos;");
